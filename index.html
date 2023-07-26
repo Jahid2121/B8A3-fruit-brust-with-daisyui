@@ -39,21 +39,8 @@
     <header  class="container border-x-[40px] border-[#FFF] mx-auto ">
       <nav class="">
         <div class="navbar my-12 rounded-[600px]   bg-button-primary">
-            <div class="navbar-start">
-              <div class="dropdown">
-               
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 px-7 py-12">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
+            <div class="navbar-start flex-1">
+             
               <div class="navbar-center hidden font-normal text-white lg:flex">
                 <ul class="menu menu-horizontal text-base ">
                   <li><a>Home</a></li>
@@ -65,15 +52,23 @@
               <a class="btn bg-button-primary border-0 pl- normal-case text-white text-[40px]"><img class="w-[40px]" src="images/logo.png" alt="">Fruit Burst</a>
             </div>
            
-            <div class=""> 
+            <div class="hidden lg:block "> 
                 <button class="flex pr-7 text-left pl-32 py-4 rounded-3xl bg-white">
                 <input class="text-left" type="text" placeholder="Search here">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                 </button>
             </div>
-            <label tabindex="0" class="btn btn-ghost lg:hidden md:hidden">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
               </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
           </div>
       </nav>
       <!-- carousel Banner -->
@@ -83,7 +78,7 @@
         <div  id="slide1" class="carousel-item relative w-full">
           <img class="bg-gradient-to-r from-[#121212] to-[#121212]" src="./images/banner1.png" class="w-full" />
           <div class="carousel-text absolute flex flex-col justify-center items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#FFF]">
-            <h2 class="text-6xl text-center f0nt-black mb-4">Exotic tastes at your doorstep</h2>
+            <h2 class="text-6xl text-center font-extrabold mb-4">Exotic tastes at your doorstep</h2>
             <p class="text-lg font-normal ">We supply highly quality organic products</p>
             <button class="btn bg-button-primary mt- text-[#FFF] border-0 mt-7 ">Shop Now</button>
           </div>
@@ -96,7 +91,7 @@
         <div id="slide2" class="carousel-item relative w-full">
           <img class="bg-gradient-to-r from-[#121212] to-[#121212] opacity-100" src="./images/banner2.png" class="w-full" />
           <div class="carousel-text absolute flex flex-col justify-center items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
-            <h2 class="text-6xl text-center f0nt-black mb-4">Exotic tastes at your doorstep</h2>
+            <h2 class="text-6xl text-center font-extrabold mb-4">Exotic tastes at your doorstep</h2>
             <p class="text-lg font-normal">We supply highly quality organic products</p>
             <button class="btn bg-button-primary text-white border-0  mt-7">Shop Now</button>
           </div>
@@ -109,7 +104,7 @@
         <div id="slide3" class="carousel-item relative w-full">
           <img src="./images/banner3.png" class="w-full" />
           <div class="carousel-text absolute flex flex-col justify-center items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
-            <h2 class="text-6xl text-center f0nt-black mb-4">Exotic tastes at your doorstep</h2>
+            <h2 class="text-6xl text-center font-extrabold mb-4">Exotic tastes at your doorstep</h2>
             <p class="text-lg font-normal">We supply highly quality organic products</p>
             <button class="btn bg-button-primary text-white border-0 mt-7">Shop Now</button>
           </div>
@@ -122,7 +117,7 @@
           <!-- Banner 4 -->
           <img class="bg-gradient-to-r from-[#121212] to-[#121212]" src="./images/banner4.png" class="w-full" />
           <div class="carousel-text absolute flex flex-col justify-center items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
-            <h2 class="text-6xl text-center f0nt-black mb-4">Exotic tastes at your doorstep</h2>
+            <h2 class="text-6xl text-center font-extrabold mb-4">Exotic tastes at your doorstep</h2>
             <p class="text-lg font-normal">We supply highly quality organic products</p>
             <button class="btn bg-button-primary text-white border-0 text-lg font-normal f0nt-black mt-7">Shop Now</button>
           </div>
@@ -148,15 +143,15 @@
           
           <br>Latin literature from 45 BC, making it over 2000 years old.</p>
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-             <!-- first card -->
+             <!-- Apple card -->
         
              <div class="card bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
-                <img class="w-24" src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                <img class="w-16" src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title text-2xl font-bold mb-9">12.90$ - 18.85$</h2>
-                <p class="text-[16px] font-normal mb-5">Apples</p>
+                <p class="text-[16px] font-normal mb-5">Orange</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
                   <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
                   <path d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z" fill="#FBC0A8"/>
@@ -171,15 +166,15 @@
                 
                 </div>
               </div>
-      <!-- first card -->
+      <!-- Orange card -->
       
           <div class="card bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
-                <img class="w-24" src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                <img class="w-24" src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title text-2xl font-bold mb-9">12.90$ - 18.85$</h2>
-                <p class="text-[16px] font-normal mb-5">Apples</p>
+                <p class="text-[16px] font-normal mb-5">Orange</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
                   <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
                   <path d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z" fill="#FBC0A8"/>
@@ -194,15 +189,15 @@
                 
                 </div>
               </div>
-      <!-- first card -->
+      <!-- Red Dragon card -->
       
           <div class="card bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
-                <img class="w-24" src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                <img class="w-24" src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title text-2xl font-bold mb-9">12.90$ - 18.85$</h2>
-                <p class="text-[16px] font-normal mb-5">Apples</p>
+                <p class="text-[16px] font-normal mb-5">Red Dragon</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
                   <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
                   <path d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z" fill="#FBC0A8"/>
@@ -217,15 +212,15 @@
                 
                 </div>
               </div>
-      <!-- first card -->
+      <!-- Banana card -->
       
           <div class="card bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
-                <img class="w-24" src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                <img class="w-24" src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title text-2xl font-bold mb-9">12.90$ - 18.85$</h2>
-                <p class="text-[16px] font-normal mb-5">Apples</p>
+                <p class="text-[16px] font-normal mb-5">Banana</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
                   <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
                   <path d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z" fill="#FBC0A8"/>
@@ -242,7 +237,7 @@
               </div>
             
           </div>
-              
+              <button class="btn bg-button-primary lg:mx-[396px] border-red-900">Button</button>
             </section>
 
       <section>
