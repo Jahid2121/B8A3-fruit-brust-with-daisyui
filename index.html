@@ -132,16 +132,56 @@
 <!-- friuit section -->
 
 
-
+<!-- deal section -->
 
 <section class="container border-x-[40px] border-[#FFF] mx-auto ">
-        <!-- deal section -->
-        <h2 class="text-5xl font-black mt-52 mb-6">
-            Deal of the day
-        </h2>
-        <p class="font-normal text-[16px] mb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
-          
-          <br>Latin literature from 45 BC, making it over 2000 years old.</p>
+        
+        <div class="flex ">
+          <div class="flex-1">
+            <h2 class="text-5xl font-black mt-52 mb-6">
+              Deal of the day
+          </h2>
+          <p class="font-normal text-[16px] mb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+            
+            <br>Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max mt-52 mb-6">
+            <div class="flex ">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:29;"></span>
+                </span>
+                days
+              </div>
+              <div class=" ">
+                <img class="items-center" src="images/3idiot.svg" alt="">
+              </div>
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:25;"></span>
+              </span>
+              min 
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:08;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+
+        </div>
+
+
+
+
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
              <!-- Apple card -->
         
@@ -240,24 +280,26 @@
               <button class="btn bg-button-primary text-white ml-48 lg:mx-[416px] my-6 lg:mt-12  lg:mb-32 border-0">Shop All</button>
             </section>
 
-      <section>
+      <section class="container border-x-[40px] border-[#FFF] mx-auto">
         <!-- team section -->
 
-        <div class="hero container mx-auto ml-4"  style="background-image: url('./images/banner1.png');">
+        <div class="hero rounded-lg"  style="background-image: url('./images/banner1.png');">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-neutral-content">
-            <div class="max-w-md">
+            <div class="">
               <h1 class="mb-5 text-5xl text-center font-black">Meet the team section</h1>
-              <p class="mb-5 text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-             <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 ">
+              <p class="mb-5 text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                <br>
+                 Latin literature from 45 BC, making it over 2000 years old.</p>
+             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 ">
               <!-- member 1 -->
-              <div class="card   shadow-xl">
+              <div class="card  shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./images/member1.png" alt="Shoes" class="rounded-xl" />
+                  <img class="w-24" src="./images/member1.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Awlad Hossain</h2>
-                  <p>Fruits Expert</p>
+                  <h2 class="card-title text-base font-bold">Awlad Hossain</h2>
+                  <p class="font-medium text-base">Fruits Expert</p>
                   <div class="card-actions">
                     <div class="flex gap-3">
                       <img src="images/facebook 1.svg" alt="">
@@ -267,14 +309,14 @@
                   </div>
                 </div>
               </div>
-              <!-- member 1 -->
-              <div class="card   shadow-xl">
+              <!-- member 2 -->
+              <div class="card  shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./images/member1.png" alt="Shoes" class="rounded-xl" />
+                  <img class="w-24" src="./images/member2.png" alt="Safia Chowdhury" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Awlad Hossain</h2>
-                  <p>Fruits Expert</p>
+                  <h2 class="card-title text-base font-bold">Safia Chowdhury</h2>
+                  <p class="font-medium text-base">Fruits Expert</p>
                   <div class="card-actions">
                     <div class="flex gap-3">
                       <img src="images/facebook 1.svg" alt="">
@@ -284,14 +326,14 @@
                   </div>
                 </div>
               </div>
-              <!-- member 1 -->
-              <div class="card   shadow-xl">
+              <!-- member 3 -->
+              <div class="card  shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./images/member1.png" alt="Shoes" class="rounded-xl" />
+                  <img class="w-24" src="./images/member3.png" alt="Rokib Hossain" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Awlad Hossain</h2>
-                  <p>Fruits Expert</p>
+                  <h2 class="card-title text-base font-bold">Rokib Hossain</h2>
+                  <p class="font-medium text-base">Fruits Expert</p>
                   <div class="card-actions">
                     <div class="flex gap-3">
                       <img src="images/facebook 1.svg" alt="">
@@ -301,14 +343,14 @@
                   </div>
                 </div>
               </div>
-              <!-- member 1 -->
-              <div class="card   shadow-xl">
+              <!-- member 4 -->
+              <div class="card  shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./images/member1.png" alt="Shoes" class="rounded-xl" />
+                  <img class="w-24" src="./images/member4.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Awlad Hossain</h2>
-                  <p>Fruits Expert</p>
+                  <h2 class="card-title text-base font-bold">Chaity</h2>
+                  <p class="font-medium text-base">Fruits Expert</p>
                   <div class="card-actions">
                     <div class="flex gap-3">
                       <img src="images/facebook 1.svg" alt="">
