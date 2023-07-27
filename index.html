@@ -90,8 +90,8 @@
           <div  id="slide1" class="carousel-item  relative w-full">
             <img class= " bg-gradient-to-r from-[#121212] to-[#121212]" src="./images/banner1.png" class="w-full" />
             <div class="carousel-text absolute flex flex-col justify-center items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#FFF]">
-              <h2 class="lg:text-6xl text-2xl pt-4 text-center font-extrabold lg:mb-4">Exotic tastes at your doorstep</h2>
-              <p class="lg:text-lg text-[11px] font-normal inline-block">We supply highly quality organic products</p>
+              <h2 class="lg:text-4xl text-2xl text-center font-extrabold lg:mb-4">Exotic tastes at your doorstep</h2>
+              <p class="lg:text-lg text-[11px] font-normal ">We supply highly quality organic products</p>
               <button class="btn bg-button-primary  text-[#FFF] border-0 lg:mt-7 ">Shop Now</button>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -155,31 +155,55 @@
 
     <main>
 <!-- fruit section -->
-<section class="text-center container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-  <div class="card p-4 md:p-8">
-    <figure class="px-6 md:px-10 pt-6 md:pt-10">
-      <img src="images/fruit1.png" alt="Strawberry" class="rounded-lg  mx-auto" />
+<section class="text-center -mt-16 -mr-64   container mx-auto flex">
+  <!-- fruit 1 -->
+  <div class="card p-2 bg-white rounded-none rounded-none hidden lg:block">
+    <figure class="px-2 ">
+      <img src="images/fruit1.png" alt="Strawberry" class="w-16" />
     </figure>
-    <div class="card-body items-center text-center mt-4 md:mt-6">
-      <p class="font-medium text-sm">Strawberry</p>
+    <div class=" items-center text-center ">
+      <p class="font-medium text-[#121212cc] text-sm">Cherry</p>
     </div>
   </div>
-  <div class="card p-4 md:p-8">
-    <figure class="px-6 md:px-10 pt-6 md:pt-10">
-      <img src="images/fruit1.png" alt="Strawberry" class="rounded-lg w-32 md:w-48 mx-auto" />
+  <!-- fruit 2 -->
+  <div class="card p-2 bg-white rounded-none hidden lg:block">
+    <figure class="px-2 ">
+      <img src="images/fruit2.png" alt="Strawberry" class="w-12" />
     </figure>
-    <div class="card-body items-center text-center mt-4 md:mt-6">
-      <p class="font-medium text-sm">Strawberry</p>
+    <div class=" items-center text-center ">
+      <p class="font-medium text-[#121212cc] text-sm">Orange</p>
     </div>
   </div>
-<div class="card p-4 md:p-8">
-  <figure class="px-6 md:px-10 pt-6 md:pt-10">
-    <img src="images/fruit1.png" alt="Strawberry" class="rounded-lg w-32 md:w-48 mx-auto" />
-  </figure>
-  <div class="card-body items-center text-center mt-4 md:mt-6">
-    <p class="font-medium text-sm">Strawberry</p>
+  <!-- fruit 3 -->
+  <div class="card p-2 bg-white rounded-none hidden lg:block">
+    <figure class="px-2 ">
+      <img src="images/fruit3.png" alt="Strawberry" class="w-16" />
+    </figure>
+    <div class=" items-center text-center ">
+      <p class="font-medium text-[#121212cc] text-sm">Mango</p>
+    </div>
   </div>
-</div>
+
+  <!-- fruit 4 -->
+  <div class="card p-2 bg-white rounded-none hidden lg:block">
+    <figure class="px-2 ">
+      <img src="images/fruit4.png" alt="Strawberry" class="w-16" />
+    </figure>
+    <div class=" items-center text-center ">
+      <p class="font-medium text-[#121212cc] text-sm">Strawberry</p>
+    </div>
+  </div>
+
+  <!-- fruit 5 -->
+  <div class="card p-2 bg-white rounded-none hidden lg:block">
+    <figure class="px-2 ">
+      <img src="images/fruit5.png" alt="Strawberry" class="w-16" />
+    </figure>
+    <div class=" items-center text-center ">
+      <p class="font-medium text-[#121212cc] text-sm">Pomegranate</p>
+    </div>
+  </div>
+
     
 
 </section>
@@ -193,7 +217,7 @@
             <h2 class=" lg:text-5xl text-[20px] lg:text-left text-center font-black mt-52 mb-6">
               Deal of the day
           </h2>
-          <p class="font-normal lg:max-w-xl  items-center max-w-[270px]  text-center lg:text-left lg:text-base text-[11px] mb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+          <p class="font-normal  items-center -w-[270px]  text-center lg:text-left lg:text-base text-[11px] mb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
             
             Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
@@ -609,7 +633,7 @@
         <h1 class="text-4xl text-center font-extrabold">
           Why Choose Us
         </h1>
-        <p class="text-base font-medium text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+        <p class="text-base font-medium text-center mb-11">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
           <br>
            Latin literature from 45 BC, making it over 2000 years old.</p>
       <div class="grid md:grid-cols-2 lg:grid-cols-3">
@@ -657,8 +681,10 @@
           </div>
           
         </div>
-        <div>
-          <img class="w-52" src="images/whychoose1.png" alt="">
+
+        <!-- image div -->
+        <div class="">
+          <img class="w-96 " src="images/whychoose1.png" alt="">
         </div>
         <div class="b">
 
